@@ -1,59 +1,68 @@
-# 🎁 Juego del Amigo Secreto
+# 🎁 Amigo Secreto (`Challenge_Amigo_Secreto`)
 
-Aplicación web sencilla para registrar nombres de amigos y realizar un sorteo aleatorio del "Amigo Secreto".
+Aplicación web interactiva diseñada para registrar nombres de participantes y realizar un sorteo aleatorio de "Amigo Secreto" de forma rápida y sencilla.
 
-## 📋 Descripción
-Este proyecto permite:
-- Ingresar nombres de amigos participantes.
-- Mostrar la lista actualizada de amigos.
-- Sortear aleatoriamente un amigo secreto.
+---
 
-Se ha desarrollado utilizando **HTML**, **CSS** y **JavaScript puro**, sin dependencias externas.
+## 📂 Estructura del Proyecto
 
-## 🚀 Funcionalidades
-1. **Agregar amigo**  
-   - Captura el nombre ingresado en el campo de texto.
-   - Valida que el campo no esté vacío.
-   - Añade el nombre al arreglo de amigos.
-   - Limpia el campo de entrada.
-   - Actualiza la lista en pantalla.
+El proyecto está organizado de manera limpia con JavaScript puro, sin librerías ni dependencias externas:
 
-2. **Mostrar lista de amigos**  
-   - Recorre el arreglo de amigos.
-   - Muestra cada nombre como un elemento `<li>` dentro de la lista HTML.
-   - Limpia la lista antes de mostrarla para evitar duplicados.
+    Challenge_Amigo_Secreto/
+    ├── assets/
+    │   ├── amigo-secreto.png
+    │   └── play_circle_outline.png
+    ├── index.html          # Interfaz y estructura visual
+    ├── style.css           # Estilos responsivos y diseño de componentes
+    ├── app.js              # Lógica del sorteo y manipulación del DOM
+    └── README.md
 
-3. **Sortear amigo secreto**  
-   - Valida que haya al menos un nombre en la lista.
-   - Genera un índice aleatorio usando `Math.random()` y `Math.floor()`.
-   - Muestra el nombre sorteado en pantalla.
+---
 
-## 🛠️ Tecnologías utilizadas
-- **HTML5**  
-- **CSS3**  
-- **JavaScript** (DOM y manipulación de arrays)
+## 🚀 Funcionalidades Principales
 
-## 📂 Estructura de archivos
+1. **Agregar amigo**
+   * Captura el nombre ingresado en el campo de texto.
+   * Valida que el campo no esté vacío ni contenga espacios en blanco inválidos.
+   * Añade el nombre al arreglo interno de participantes y limpia el input automáticamente.
+   * Actualiza la lista en pantalla en tiempo real.
 
-📦 amigo-secreto
-┣ 📂 assets
-┃ ┣ amigo-secreto.png
-┃ ┣ play_circle_outline.png
-┣ 📜 index.html
-┣ 📜 style.css
-┣ 📜 app.js
-┗ 📜 README.md
+2. **Mostrar lista de amigos**
+   * Recorre el arreglo de participantes.
+   * Genera dinámicamente elementos `<li>` dentro de la lista HTML.
+   * Limpia el contenedor antes de renderizar para evitar duplicados visuales.
 
+3. **Sortear amigo secreto**
+   * Valida que exista un número mínimo de participantes en la lista antes de ejecutar.
+   * Utiliza `Math.random()` y `Math.floor()` para seleccionar un índice de manera completamente aleatória.
+   * Muestra el resultado destacado en la interfaz.
 
-## 📖 Uso
-1. Abrir `index.html` en un navegador.
-2. Escribir un nombre en el campo de texto y presionar **Añadir**.
-3. Repetir el paso anterior para todos los participantes.
-4. Presionar **Sortear amigo** para obtener un resultado aleatorio.
+---
 
-## 📌 Ejemplo de uso
-- Lista ingresada: Ana, Pedro, Luis, Marta
-- Resultado del sorteo: 🎉 El amigo secreto es: **Luis**
+## 🛠️ Stack Tecnológico
+
+* **HTML5:** Maquetación semántica.
+* **CSS3:** Estilos personalizados y diseño adaptable.
+* **JavaScript (Vanilla):** Lógica algorítmica, manejo de arreglos y manipulación del DOM.
+
+---
+
+## 📖 Modo de Uso
+
+1. Abre el archivo `index.html` en cualquier navegador web moderno.
+2. Escribe el nombre de un participante en el campo de texto y haz clic en **Añadir**.
+3. Repite el proceso para incorporar a todos los integrantes del grupo.
+4. Presiona el botón de **Sortear amigo** para obtener el resultado aleatorio en pantalla.
+
+---
+
+## 📌 Ejemplo de Ejecución
+
+* **Participantes ingresados:** Ana, Pedro, Luis, Marta
+* **Resultado del sorteo:** 🎉 *El amigo secreto es: Luis*
+
+---
 
 ## 📜 Licencia
-Este proyecto es de uso libre para fines educativos y recreativos.
+
+Este proyecto es de uso libre para fines educativos, de práctica y recreativos.
